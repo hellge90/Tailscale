@@ -34,11 +34,71 @@ An **exit node** is a device on your tailnet that routes all your internet traff
 
 Switching between exit nodes is dead simple. In the Tailscale app you just pick which node you want to use, or you can do it from the command line with one command. No reconnecting, no reconfiguring — it flips instantly.
 
-## Installation
+## Quick Start (Fastest Way to Install)
 
-Install Tailscale on Linux or Raspberry Pi by following the complete [installation guide](INSTALL.md).
+If you're new to the terminal, this is the easiest way to get Tailscale running on Linux or Raspberry Pi:
+
+### Step 1: Clone This Repository
+
+Open your terminal and run:
+
+```bash
+git clone https://github.com/hellge90/Tailscale.git
+cd Tailscale
+```
+
+If you don't have Git installed, install it first:
+
+```bash
+sudo apt install git
+```
+
+### Step 2: Run the Setup Script
+
+Run this single command — it will do everything automatically:
+
+```bash
+bash setup.sh
+```
+
+The script will:
+- Update your system
+- Install Tailscale
+- Start the service
+- Guide you through login
+
+### Step 3: Authenticate
+
+When the script finishes, it will tell you to run:
+
+```bash
+sudo tailscale up
+```
+
+Copy the link it shows you, paste it into your browser, and log in with Google or GitHub. Done!
+
+### Step 4: Verify It's Working
+
+Run this to see your device on the network:
+
+```bash
+tailscale status
+```
+
+You should see your device with a 100.x.x.x address.
+
+## Detailed Installation Guide
+
+For step-by-step instructions with explanations, see the [complete installation guide](INSTALL.md).
 
 ## Mobile Apps
 
-- [Download Tailscale from the App Store](https://apps.apple.com/app/tailscale/id1470333651)
-- [Download Tailscale from Google Play](https://play.google.com/store/apps/details?id=com.tailscale.ipn)
+Download Tailscale on your phone or tablet to join the same network:
+- [Download from the App Store](https://apps.apple.com/app/tailscale/id1470333651) (iPhone/iPad)
+- [Download from Google Play](https://play.google.com/store/apps/details?id=com.tailscale.ipn) (Android)
+
+Log in with the same account and your phone instantly connects to your tailnet.
+
+## Troubleshooting
+
+If something goes wrong, check the [installation guide](INSTALL.md) troubleshooting section or visit [tailscale.com](https://tailscale.com) for help.
