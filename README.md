@@ -33,3 +33,12 @@ You don't really "host" Tailscale yourself — the coordination server is theirs
 An **exit node** is a device on your tailnet that routes all your internet traffic through it. So if you set up an exit node at home, your laptop abroad can browse the web as if it were sitting in your living room — useful for accessing geo-restricted content or keeping a consistent IP.
 
 Switching between exit nodes is dead simple. In the Tailscale app you just pick which node you want to use, or you can do it from the command line with one command. No reconnecting, no reconfiguring — it flips instantly.
+
+## Installation
+
+Install Tailscale on Linux or Raspberry Pi by following the complete [installation guide](INSTALL.md).
+
+## Mobile Apps
+
+- [Download Tailscale from the App Store](https://apps.apple.com/app/tailscale/id1470333651)
+- [Download Tailscale from Google Play](https://play.google.com/store/apps/details?id=com.tailscale.ipn)
